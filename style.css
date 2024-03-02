@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+#hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); 
+}
+
+.hero-contents {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-contents h1 {
+    font-family: "Roboto mono", monospace;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.hero-contents a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: "Roboto mono", monospace;
+    font-weight: 200;
+    border: 1px solid white;
+    margin-top: 35px;
+    padding: 15px;
+
+}
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto mono", monospace;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+    width: 100vw;
+    line-height: 2.5rem;
+    padding: 1.7rem;
+    display: none;
+    text-align: left;
+}
+
+.active {
+    display: flex;
+}
+
+.info i {
+    font-size: 4rem;
+}
+
+.info:nth-of-type(2) i {
+    color: rgb(23, 138, 231);
+}
+
+.info:nth-of-type(3) i {
+    color: 	rgb(0, 0, 0);
+}
+
+.info:nth-of-type(4) i {
+    color: rgb(1, 151, 1);
+}
+
+
+.info p {
+    font-size: 1.5rem;
+    max-width: 45ch;
+    margin: 1.7rem 0rem 1.7rem 0rem;
+    padding: 1rem;
+}
+
+#about-us a {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+}
+
+.fa-sort-down {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+  }
